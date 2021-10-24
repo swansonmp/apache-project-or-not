@@ -9,6 +9,16 @@ type alias RealProject =
   , link : String
   }
 
+default : RealProject
+default =
+  { name = ""
+  , category = ""
+  , initialRelease = ""
+  , writtenIn = ""
+  , description = ""
+  , link = ""
+  }
+
 type alias DateString = String
 
 projects : List RealProject

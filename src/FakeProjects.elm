@@ -7,6 +7,14 @@ type alias FakeProject =
   , link : String
   }
 
+default : FakeProject
+default =
+  { name = ""
+  , category = ""
+  , description = ""
+  , link = ""
+  }
+
 projects : List FakeProject
 projects =
   List.map
